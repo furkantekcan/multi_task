@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "943686881718",
+    "firebase_url": "https://multitask-c8839.firebaseio.com",
+    "project_id": "multitask-c8839",
+    "storage_bucket": "multitask-c8839.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943686881718:android:cae9b1efc5dcd900dff117",
+        "android_client_info": {
+          "package_name": "com.example.multi_plt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943686881718-vg0261vakaqqsen75pmcmmhm3u636l8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.multi_plt",
+            "certificate_hash": "374b61c87807eea78bff34fe1cedfa5f78557bcb"
+          }
+        },
+        {
+          "client_id": "943686881718-4sba2cacf7i8ml1qdup30hs4oiihbud2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOnL2LYXZwME3UnWhjMgZH0B-WmJjSFVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943686881718-4sba2cacf7i8ml1qdup30hs4oiihbud2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
