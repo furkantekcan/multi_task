@@ -9,8 +9,10 @@ class Loading extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         color: Colors.white,
-        child: CupertinoActivityIndicator(
-          radius: 20.0,
+        child: Center(
+          child: CircularProgressIndicator(
+            strokeWidth: 4.0,
+          ),
         ),
       ),
     );

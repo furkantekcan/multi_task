@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:multi_plt/screens/home_page.dart';
-import 'package:multi_plt/services/services.dart';
 
 class LoginPage extends StatefulWidget {
 //  LoginPage({Key key, this.title}) : super(key: key);
@@ -28,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             FlatButton(
-              onPressed: _pushPage,
+              onPressed: () {},
               child: Text(
                 'Login',
                 style: TextStyle(color: Colors.white),
@@ -39,17 +37,5 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
-  }
-
-  _pushPage() {
-    AuthService().signInWithGoogle().whenComplete(() {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (context) {
-            return HomePage();
-          },
-        ),
-      );
-    }).catchError((e) => {print('Something wrong')});
   }
 }
