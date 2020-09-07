@@ -81,5 +81,3 @@ class AuthRepository {
         name: _firebaseAuth.currentUser.displayName);
   }
 }
-
-class NetworkException implements Exception {}

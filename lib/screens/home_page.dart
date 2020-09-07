@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:multi_plt/services/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:multi_plt/bloc/auth_bloc.dart';
+import 'package:multi_plt/repositories/user_model.dart';
 
 class HomePage extends StatelessWidget {
+  final UserModel user;
+
+  HomePage({Key key, @required this.user}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,9 +19,10 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Text('Signed in successful'),
+            Text('User: ' + user.name),
             FlatButton(
               onPressed: () {
-                AuthService().signOutGoogle();
+                BlocProvider.of<AuthBloc>(context).add(LoggedOut());
               },
               child: Text(
                 'Sign out',

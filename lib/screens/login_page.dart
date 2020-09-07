@@ -25,14 +25,6 @@ class _LoginPageState extends State<LoginPage> {
               'Welcome',
               style: Theme.of(context).textTheme.headline4,
             ),
-            FlatButton(
-              onPressed: () {},
-              child: Text(
-                'Login',
-                style: TextStyle(color: Colors.white),
-              ),
-              color: Colors.blue,
-            )
           ],
         ),
       ),
